@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+/* Base Styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%; /* 62.5% = 10px */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: whitesmoke;
+}
+
+h1,
+h2,
+p {
+  margin: 1.6rem 0;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  flex-direction: row;
+}
+
+section {
+  padding: 100px 0;
+}
+
+/* Main Content */
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+    url("./img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Nav bar Start */
+
+nav .logo h1 {
+  color: #4caf50;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 8%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 2.5rem;
+}
+
+nav ul li a:hover {
+  color: #4caf50;
+  transition: 0.5s ease-in-out;
+}
+
+nav box-icon {
+  display: none;
+}
+/* Nav-bar End */
+
+/* Intro Section */
+
+.header-section {
+  color: white;
+  position: relative;
+  width: 50%;
+  top: 16%;
+  left: 8%;
+}
+
+.header-section input {
+  margin: 2.4rem 0;
+  font-size: 1.8rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 1.2rem 0;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  width: 50%;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+input::placeholder {
+  color: #ccc;
+  font-size: 1.2rem;
+}
+/* Main Content End */
+
+/* About Section Start */
+
+.about-left,
+.about-middle,
+.about-right {
+  flex-basis: 30%;
+  padding: 1.6rem;
+}
+
+.btn1 {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 16px;
+  display: inline-block;
+  margin: 2rem 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.about2 {
+  background-color: #222;
+  color: #fff;
+}
+
+.about2-left {
+  flex-basis: 50%;
+}
+
+.about2-right {
+  flex-basis: 30%;
+}
+
+.about2-right .row .card {
+  padding: 3rem 8rem;
+  color: #222;
+  background-color: #DCDCDC;
+  margin: 1.6rem;
+  text-align: center;
+}
+
+/* About Section End */
+
+/* Process Section Start */
+.process-card {
+  padding: 2% 4%;
+}
+
+.process-section h2 {
+  color: #4caf50;
+}
+
+.process-one {
+}
+
+.process-section .process-one {
+  text-align: left;
+}
+
+.process-section .process-two {
+  text-align: center;
+}
+
+.process-section .process-three {
+  text-align: right;
+}
+
+/* Process Section End */
+
+
+/* For responsiveness */
+@media only screen and (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    position: relative;
+  }
+
+  nav box-icon {
+    font-size: 3.2rem;
+    display: flex;
+    position: absolute;
+    right: 50px;
+  }
+
+  .showmenu {
+    display: block;
+  }
+
+  nav box-icon:hover {
+    color: #4caf50;
+    cursor: pointer;
+  }
+  nav ul {
+    background-color: #c0c0c0;
+    padding-right: 8%;
+    display: none;
+  }
+
+  nav ul li {
+    display: block;
+    font-size: 3.2rem;
+    text-align: center;
+    width: 100%;
+    font-weight: 800;
+  }
+
+  nav ul li a {
+    color: black;
+  }
+
+  /* About Section */
+
+  .about-left,
+  .about-middle,
+  .about-right {
+    flex-direction: row;
+  }
+}
